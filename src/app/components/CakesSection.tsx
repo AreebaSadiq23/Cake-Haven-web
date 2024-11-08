@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";  
 import styles from "../styles/CakesSection.module.css";
 
 interface Cake {
@@ -43,10 +44,12 @@ const CakesSection: React.FC = () => {
       <div className={styles.cakeList}>
         {cakes.map((cake) => (
           <div key={cake.id} className={styles.cakeCard}>
-            <img
+            <Image
               src={cake.image}
               alt={cake.name}
               className={styles.cakeImage}
+              width={300}  
+              height={200} 
             />
             <h3 className={styles.cakeName}>{cake.name}</h3>
             <p className={styles.cakeDescription}>{cake.description}</p>

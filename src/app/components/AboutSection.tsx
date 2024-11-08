@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";  
 import styles from "../styles/AboutSection.module.css";
 
 const AboutSection: React.FC = () => {
@@ -26,7 +27,13 @@ const AboutSection: React.FC = () => {
         </p>
       </div>
       <div className={styles.imageContainer}>
-        <img src="/about.jpg" alt="About Cake Haven" className={styles.image} />
+        <Image
+          src="/about.jpg"
+          alt="About Cake Haven"
+          className={styles.image}
+          width={500}   
+          height={400} 
+        />
       </div>
     </section>
   );

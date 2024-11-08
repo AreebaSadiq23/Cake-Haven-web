@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import styles from "../styles/HeroSection.module.css";
 import { FaFacebookF, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
           <h1 className={styles.heading}>Delicious Cakes for Every Occasion</h1>
           <p className={styles.tagline}>
             Order your custom cake today and make every event special!
-            We provide a variety of flavors and designs. Whether it's a birthday, wedding, or any celebration, we have got the perfect cake for you.
+            We provide a variety of flavors and designs. Whether it&apos;s a birthday, wedding, or any celebration, we have got the perfect cake for you.
           </p>
           <button className={styles.ctaButton} onClick={handleButtonClick}>Order Now</button>
         </div>

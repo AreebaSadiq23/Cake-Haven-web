@@ -28,12 +28,12 @@ const ContactUsSection: React.FC = () => {
         <p className={styles.description}>
           At Cake Haven, we are passionate about creating delicious cakes for
           every occasion. Whether you have a question about our flavors, need
-          assistance with an order, or want to share your feedback, we're here
+          assistance with an order, or want to share your feedback, we&apos;re here
           to help!
         </p>
         <p className={styles.description}>
           Our customer service team is dedicated to ensuring you have the best
-          experience possible. Don't hesitate to reach out; we value your
+          experience possible. Don&apos;t hesitate to reach out; we value your
           inquiries and aim to respond as quickly as possible.
         </p>
         <p className={styles.callToAction}>

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";  
 import styles from "../styles/GallerySection.module.css";
 
 const images = [
@@ -10,9 +11,8 @@ const images = [
   "/img4.jpg",
   "/img5.jpg",
   "/img6.jpg",
-  "./img8.jpg",
+  "/img8.jpg",
   "/img7.jpg",
-
 ];
 
 const GallerySection: React.FC = () => {
@@ -22,10 +22,12 @@ const GallerySection: React.FC = () => {
       <div className={styles.galleryContainer}>
         {images.map((src, index) => (
           <div key={index} className={styles.imageWrapper}>
-            <img
+            <Image
               src={src}
               alt={`Cake ${index + 1}`}
               className={styles.galleryImage}
+              width={300}  
+              height={300}
             />
           </div>
         ))}
@@ -33,4 +35,5 @@ const GallerySection: React.FC = () => {
     </section>
   );
 };
+
 export default GallerySection;

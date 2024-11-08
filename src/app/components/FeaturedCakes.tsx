@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image"; 
 import styles from "./FeaturedCakes.module.css";
 
 const cakes = [
@@ -41,10 +42,12 @@ const FeaturedCakes: React.FC = () => {
       <div className={styles.cakesGrid}>
         {cakes.map((cake) => (
           <div key={cake.id} className={styles.cakeCard}>
-            <img
+            <Image
               src={cake.image}
               alt={cake.name}
               className={styles.cakeImage}
+              width={500} 
+              height={300} 
             />
             <div className={styles.cakeInfo}>
               <h3 className={styles.cakeName}>{cake.name}</h3>
