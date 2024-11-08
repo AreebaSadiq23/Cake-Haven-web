@@ -1,0 +1,251 @@
+.orderingDelivery {
+  padding: 4rem 2rem;
+  background-color: #fff7e6; 
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 900px;
+  position: relative;
+  overflow: hidden; 
+  max-width: 1536px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #b0523b;
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  z-index: 1;
+  position: relative;
+}
+
+.content {
+  text-align: left;
+  z-index: 1;
+  position: relative;
+}
+
+.subheading {
+  font-size: 1.8rem;
+  color: #5a5a5a;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid #b0523b;
+  padding-bottom: 0.5rem;
+}
+
+.orderSteps {
+  margin: 1.5rem 0;
+  padding-left: 20px;
+}
+
+.orderSteps li {
+  margin-bottom: 0.8rem; 
+  display: flex;
+  align-items: center;
+}
+
+.orderSteps li svg {
+  margin-right: 0.6rem;
+  color: #b0523b;
+  font-size: 1.1rem; 
+}
+
+.deliveryDetails {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  line-height: 1.6; 
+}
+
+.deliveryList {
+  list-style-type: disc;
+  margin: 1.2rem 0;
+  padding-left: 40px;
+}
+
+.deliveryList li {
+  display: flex;
+  align-items: center;
+}
+
+.deliveryList li svg {
+  margin-right: 0.6rem;
+  color: #b0523b;
+  font-size: 1.1rem;
+}
+
+.notes {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.orderButton {
+  background-color: #b0523b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+  margin-top: 2rem;
+}
+
+.orderButton:hover {
+  background-color: #a14b36;
+  transform: translateY(-2px); 
+}
+
+.styledPlaceholder::placeholder {
+  color: #b0523b;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.styledPlaceholder {
+  border: 1px solid #b0523b;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.modalOverlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000; 
+}
+
+.modalContent {
+  background-color: #fff; 
+  border-radius: 12px; 
+  padding: 2rem; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  max-width: 500px; 
+  width: 100%; 
+}
+
+.modalContent h3 {
+  font-size: 2rem; 
+  color: #b0523b; 
+  margin-bottom: 1.5rem; 
+}
+
+.orderForm {
+  display: flex; 
+  flex-direction: column;
+}
+
+.orderForm label {
+  margin-bottom: 1rem; 
+  font-weight: 600;
+  color: #333; 
+}
+
+.orderForm input[type="text"],
+.orderForm input[type="date"] {
+  border: 1px solid #b0523b;
+  padding: 0.75rem; 
+  border-radius: 5px; 
+  width: 100%; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease; 
+}
+
+.orderForm input:focus {
+  border-color: #8e4c3b; 
+  outline: none;
+}
+
+.submitButton {
+  background-color: #b0523b; 
+  color: white; 
+  border: none; 
+  border-radius: 8px;
+  padding: 0.9rem 1.5rem; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.3s; 
+  margin-top: 1rem; 
+}
+
+.submitButton:hover {
+  background-color: #a14b36; 
+  transform: translateY(-2px); 
+}
+
+.closeButton {
+  background-color: #ccc; 
+  color: #333; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 0.75rem 1.5rem; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  margin-top: 0.5rem; 
+}
+
+.closeButton:hover {
+  background-color: #bbb; 
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem; 
+  }
+
+  .subheading {
+    font-size: 1.6rem; 
+  }
+
+  .orderButton, .submitButton, .closeButton {
+    padding: 0.8rem 1.5rem; 
+    font-size: 1.1rem; 
+  }
+
+  .notes, .deliveryDetails {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 1.6rem; 
+  }
+
+  .subheading {
+    font-size: 1.4rem; 
+  }
+
+  .orderSteps li {
+    font-size: 1rem; 
+  }
+
+  .deliveryList li {
+    font-size: 1rem; 
+  }
+
+  .notes, .deliveryDetails {
+    font-size: 0.9rem; 
+  }
+
+  .orderButton, .submitButton, .closeButton {
+    padding: 0.7rem 1.2rem; 
+    font-size: 1rem; 
+  }
+}

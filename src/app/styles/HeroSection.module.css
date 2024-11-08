@@ -1,0 +1,247 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 2rem;
+  max-width: 1536px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px) brightness(0.7);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 2rem 4rem; 
+}
+
+.content {
+  position: relative;
+  color: #ffffff;
+  z-index: 3;
+  padding: 2rem; 
+  max-width: 50%;
+}
+
+.heading {
+  font-size: 3.5rem; 
+  font-weight: 700;
+  color: #ffb347;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.tagline, .description {
+  font-size: 1.3rem; 
+  color: #eaeaea;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ctaButton {
+  padding: 0.8rem 2.8rem; 
+  background-color: #ff66b2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ctaButton:hover {
+  background-color: #ff3385;
+  transform: scale(1.08); 
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; 
+  color: #fff;
+  font-size: 1.7rem;
+  z-index: 3;
+  padding: 1.5rem; 
+}
+
+.iconLink {
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.iconLink:hover {
+  color: #ff66b2;
+  transform: scale(1.3);
+}
+
+.formModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.formContent {
+  background-color: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.formContent h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input::placeholder, .select option {
+  color: #888;
+}
+
+.submitButton {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  width: 100%;
+  background-color: #ff66b2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #ff3385;
+}
+
+.closeButton {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  width: 100%;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #aaa;
+}
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .tagline, .description {
+    font-size: 1.1rem;
+  }
+  .ctaButton {
+    padding: 0.7rem 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .overlay {
+    padding: 1.5rem 2rem;
+  }
+  .content {
+    max-width: 70%;
+  }
+  .icons {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 0 1rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .tagline, .description {
+    font-size: 1rem;
+  }
+  .ctaButton {
+    padding: 0.6rem 2rem;
+  }
+  .formContent h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 50vh; /* Decrease height for smaller screens */
+    padding: 0 0.5rem; /* Adjust padding */
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .tagline, .description {
+    font-size: 0.9rem;
+  }
+  .ctaButton {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+  }
+  .formContent {
+    width: 90%;
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+  .formContent h2 {
+    font-size: 1.3rem; /* Decrease font size for headings */
+  }
+  .input, .select {
+    padding: 0.5rem; /* Adjust input padding */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
