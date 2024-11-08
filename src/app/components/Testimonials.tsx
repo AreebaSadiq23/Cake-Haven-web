@@ -36,7 +36,9 @@ const Testimonials: React.FC = () => {
       <div className={styles.testimonialsGrid}>
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className={styles.testimonialCard}>
-            <p className={styles.review}>"{testimonial.review}"</p>
+            <p className={styles.review}>
+              &quot;{testimonial.review}&quot;
+            </p>
             <h3 className={styles.customerName}>- {testimonial.name}</h3>
             <div className={styles.rating}>
               {Array.from({ length: testimonial.rating }, (_, index) => (

@@ -29,7 +29,7 @@ const OrderingAndDelivery: React.FC = () => {
             <FaClipboardList /> Select your desired cake from our menu.
           </li>
           <li>
-            <FaClipboardList /> Click on the "Order Now" button.
+            <FaClipboardList /> Click on the &quot;Order Now&quot; button.
           </li>
           <li>
             <FaClipboardList /> Fill out the order form with your details.
